@@ -22,21 +22,21 @@ For a detailed explanation on how things work, check out the [guide](http://vuej
 
 首页
 
-![1551252451189](https://github.com/gituserrzx/myMtApp/tree/master/screenshots/1551252451189.png)
+![image](https://github.com/gituserrzx/myMtApp/blob/master/screenshots/1551252451189.png)
 
 登录页面
 
-![1551252539982](https://github.com/gituserrzx/myMtApp/tree/master/screenshots/1551252539982.png)
+![image](https://github.com/gituserrzx/myMtApp/blob/master/screenshots/1551252539982.png)
 
 注册页面
 
-![1551253033467](https://github.com/gituserrzx/myMtApp/tree/master/screenshots/1551253033467.png)
+![image](https://github.com/gituserrzx/myMtApp/blob/master/screenshots/1551253033467.png)
 
 切换城市
 
-![1551253120016](https://github.com/gituserrzx/myMtApp/tree/master/screenshots/1551253120016.png)
+![image](https://github.com/gituserrzx/myMtApp/blob/master/screenshots/1551253120016.png)
 
 地方美食详情页
 
-![1551253668043](https://github.com/gituserrzx/myMtApp/tree/master/screenshots/1551253668043.png)
+![image](https://github.com/gituserrzx/myMtApp/blob/master/screenshots/1551253668043.png)
 
