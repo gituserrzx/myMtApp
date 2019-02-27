@@ -24,23 +24,29 @@ const request = {
   getRecentList () {
     return axios.get('/api/meituan/city/recents.json')
   },
-  getGoodsList(){
+  getGoodsList () {
     return axios.get('/api/meituan/list/goodsList.json')
   },
-  getRecommendList(){
+  getRecommendList () {
     return axios.get('/api/meituan/list/recommend.json')
   },
-  getCategoryList(){
+  getCategoryList () {
     return axios.get('/api/meituan/list/classify.json')
   },
-  getAreaList(){
+  getAreaList () {
     return axios.get('/api/meituan/list/areaList.json')
   },
-  getPosition(){
+  getPosition () {
     return axios.get('/api/meituan/city/getPosition.json')
   },
-  getPositionDetail(){
+  getPositionDetail () {
     return axios.get('/api/meituan/product/detail.json')
+  },
+  getRegister () {
+    return axios.get('/api/meituan/register')
+  },
+  getLogin () {
+    return axios.get('/api/meituan/login', {params})
   }
 }
 export default request

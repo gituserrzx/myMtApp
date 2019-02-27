@@ -1,10 +1,9 @@
 <template>
-    <div class="blank-page"></div>
+    <router-view />
 </template>
 
 <script>
 export default{
-
 }
 </script>
 

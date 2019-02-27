@@ -1,13 +1,13 @@
 <template>
 <div class="layout-default">
     <el-container>
-    <el-header style="height:''">
+    <el-header height>
         <my-header class='m-header'/>
     </el-header>
-    <el-main style="height:''">
+    <el-main height>
         <router-view />
     </el-main>
-    <el-footer style="height:''">
+    <el-footer  height>
         <my-footer />
     </el-footer>
   </el-container>

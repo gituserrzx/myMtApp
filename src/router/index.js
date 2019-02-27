@@ -5,6 +5,8 @@ import blankPage from '@/layout/blank'
 import index from '@/views/index'
 const changeCity = () => import('@/views/changeCity')
 const goodsList = () => import('@/views/goodsList')
+const login = () => import('@/views/login')
+const register = () => import('@/views/register')
 Vue.use(Router)
 
 export default new Router({
@@ -36,7 +38,19 @@ export default new Router({
     {
       path: '/blank',
       name: 'blankPage',
-      component: blankPage
+      component: blankPage,
+      children: [
+        {
+          path: '/login',
+          name: 'login',
+          component: login
+        },
+        {
+          path: '/register',
+          name: 'register',
+          component: register
+        }
+      ]
     }
   ]
 })

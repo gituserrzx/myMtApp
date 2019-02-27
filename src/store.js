@@ -4,18 +4,18 @@ import Vuex from 'vuex'
 Vue.use(Vuex)
 
 const state = {
-  position:{}
+  position: {}
 }
 
 const mutations = {
-  setPosition(state,val){
-    state.position = val;
+  setPosition (state, val) {
+    state.position = val
   }
 }
 
 const actions = {
-  setPosition(ctx,val){
-    ctx.commit('setPosition',val)
+  setPosition (ctx, val) {
+    ctx.commit('setPosition', val)
   }
 }
 export default new Vuex.Store({
