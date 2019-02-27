@@ -26,6 +26,7 @@ export default {
       this.areaList = res.data.data;
     })
     axios.getCategoryList().then(res => {
+      console.log( res.data.data)
       this.categoryList = res.data.data;
     })
   },

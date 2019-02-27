@@ -80,7 +80,7 @@
               } else {
                   const reg = /^[a-zA-Z][a-zA-Z0-9_]{3,16}$/g;
                 const flag = reg.test(value)
-                  if( this.registerForm.userName.length >= 4 || this.registerForm.userName.length <= 16 || flag){
+                  if( this.registerForm.userName.length < 4 || this.registerForm.userName.length > 16 || flag){
                       callback()
                   }else {
                     callback(new Error('密码必须为4-16位的字母数字或下划线组成'))
@@ -107,12 +107,28 @@
         }
       },
       methods:{
-        submitForm(formName){
-          this.$ref[formName].validate((valid) => {
-              if(valid){
-
-              }
-          })
+  
+        submitForm(formName) {
+          this.$refs[formName].validate((valid) => {
+            if (valid) {
+              console.log(this.registerForm)
+              api.register({
+                params: this.registerForm
+              }).then((res) => {
+                console.log(res);
+                if (res.data.status == 'success') {
+                  this.$message({
+                    message: res.data.msg,
+                    type: 'success'
+                  });
+                  this.$router.push({name: 'login'})
+                }
+              })
+            } else {
+              console.log('error submit!!');
+              return false;
+            }
+          });
         }
       }
   }

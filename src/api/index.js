@@ -42,11 +42,11 @@ const request = {
   getPositionDetail () {
     return axios.get('/api/meituan/product/detail.json')
   },
-  getRegister () {
-    return axios.get('/api/meituan/register')
+  register (params) {
+    return axios.get('/api/meituan/register', params)
   },
-  getLogin () {
-    return axios.get('/api/meituan/login', {params})
+  login (params) {
+    return axios.get('/api/meituan/login', params)
   }
 }
 export default request
